@@ -17,4 +17,9 @@ class TemperatureConverterTest {
     void fahrenheitToCelsius_212Fahrenheit_returns100() {
         assertEquals(100.0, converter.fahrenheitToCelsius(212.0), DELTA);
     }
+
+    @Test
+    void celsiusToKelvin_zeroCelsius_returns273Point15() {
+        assertEquals(273.15, converter.celsiusToKelvin(0.0), DELTA);
+    }
 }
